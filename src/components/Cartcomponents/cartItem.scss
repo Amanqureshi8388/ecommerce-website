@@ -1,0 +1,51 @@
+.cart-info {
+    .cart-image--name{
+        div{
+            figure{
+                width: 50px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        div{
+            .color-div{
+                .color-style{
+                   width: 10px;
+                   height: 10px;
+                   border-radius: 50%;
+                }
+            }
+        }
+    }
+    .tickDelete {
+        div{
+            padding: .5rem .7rem;
+            transition: all .3s linear;
+            
+        }
+    }
+}
+
+.cart-info{
+    .right-about{
+       
+            .color-div{
+                .color-style{
+                   width: 10px;
+                   height: 10px;
+                   border-radius: 50%;
+                }
+            }
+        
+    }
+}
+
+
+@media (min-width: 400px){
+    .cart-info{
+        .tickDelete{
+            padding: .8rem 1rem;
+        }
+    }
+}

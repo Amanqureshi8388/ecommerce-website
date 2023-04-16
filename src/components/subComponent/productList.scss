@@ -1,0 +1,139 @@
+@import "../../scss//variable.scss";
+
+.container {
+  padding: 2rem;
+}
+
+.features {
+  .productItem {
+    .card {
+      height: 100%;
+      figure {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 80%;
+        img {
+          width: 100%;
+          border-radius: 5px;
+          height: 100%;
+        }
+        figcaption {
+          position: absolute;
+          top: 5%;
+          right: 10%;
+          padding: 0.5rem 0.8rem;
+          background-color: $white;
+          border-radius: 10px;
+          font-size: 1rem;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          overflow: hidden;
+          top: 0;
+          left: 0;
+          width: 0%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.304);
+          transition: all 0.3s ease-in-out;
+          border-radius: 5px;
+        }
+        &:hover::before {
+          width: 100%;
+          overflow: hidden;
+        }
+      }
+      .card-data {
+        margin-top: 0.5rem;
+        font-weight: 600;
+        padding: .4rem 0;
+        p {
+          color: $helper;
+        }
+      }
+    }
+   
+  }
+}
+
+.features {
+  background-color: transparent;
+  .productItem-list {
+    display: none;
+    .cart-list {
+      border: 1px solid rgba(83, 83, 83, 0.433);
+      padding: 0.5rem;
+
+      .left {
+        .list-img {
+          width: 90%;
+          height: 60%;
+        }
+      }
+      .right {
+        .card-data {
+          font-size: 0.7rem;
+          font-weight: 500;
+          p {
+            color: $helper;
+            margin: 0.4rem 0;
+          }
+          .description {
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 34em) {
+  .features {
+    .productItem-list {
+      .cart-list {
+        .right {
+          .card-data {
+            font-size: 0.9rem;
+            .description {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 47em) {
+  .features {
+    .productItem-list {
+      display: block;
+    }
+  }
+}
+
+//////////// ?    screen size  1025px     ////////////////
+@media screen and (min-width: 65em) {
+  .features {
+    .productItem-list {
+      display: block;
+      .cart-list {
+        .left {
+          .list-img {
+            width: 250px;
+            // height:60%;
+          }
+        }
+        .right {
+          .card-data {
+            font-size: 0.9rem;
+            .description {
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

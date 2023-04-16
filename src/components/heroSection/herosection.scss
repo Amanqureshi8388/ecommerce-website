@@ -1,0 +1,98 @@
+@import '../../scss/variable.scss';
+.heroSection{
+    .wrapper{
+        .left{
+            margin-bottom: 2rem;
+            small{
+                color: $helper;
+                font-weight: 500;
+                font-size: 1rem;
+            }
+            h1{
+                font-size: 3rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-size: 1.2rem;
+                color: $text;
+                margin: .5rem 0 1.3rem 0;
+            }
+          
+        }
+
+        .right{
+            figure{
+                padding: 0 2rem ;
+                position: relative;
+                top: 0;
+                transition: all 0.4s ease-in;
+                img{
+                    width: 100%;
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: -7%;
+                    right: -1%;
+                    width: 50%;
+                    height: 98%;
+                    background-color: $helper;
+                    z-index: -1;
+                    transition: all 0.4S ease-in;
+                }
+
+                &:hover::before{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width:48em) {
+    .heroSection{
+        .wrapper{
+            .left{
+                h1{
+                    font-size: 4rem;
+                }
+                p{
+                    font-size: 1.3rem;
+                }
+            }
+            .right{
+                margin-top: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                figure{
+                    width: 500px;
+                    &::before{
+                        content: '';
+                        top: -10%;
+                        right: -3%;
+                        width: 70%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:28em) {
+    .heroSection{
+        .wrapper{
+            .right{
+                figure{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

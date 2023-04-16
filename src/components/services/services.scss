@@ -1,0 +1,48 @@
+@import '../../scss/variable.scss';
+
+.serviceSection{
+    .wrapper{
+        .box{
+            width: 100%;
+            background-color: $bg;
+            padding: 2rem;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s ease;
+            div{
+                width: 4rem;
+                height: 4rem;
+                background-color: $white;
+                display: grid;
+                place-items: center;
+                border-radius: 50%;
+                transition: all .3 ease-in-out;
+                .icon{
+                    color: $btn;
+                    font-size: 1.5rem;
+                }
+            }
+            h3{
+                margin-top: 1rem;
+                font-weight: 500;
+                font-size: 1.2rem;
+            }
+
+            &:hover{
+                background-color: $btn;
+                color: white;
+                transform: translateY(-10px);
+            }
+        }
+        .mid-box{
+            width: 100%;
+            border-radius: 5px;
+            .inner-box{
+                @extend .box;
+            }
+        }
+    }
+}

@@ -1,0 +1,146 @@
+@import '../../scss/variable.scss';
+
+.loading{
+    font-size: 4rem ;
+    color: black;
+    text-align: center;
+}
+
+hr{
+    margin-top: 1rem;
+}
+
+
+.singleProduct{
+    .wrapper{
+        display: grid;
+        .left-box{
+            figure{
+                img{
+                    height: 100%;
+                }
+            }
+        }
+        
+        .right-box{
+            h2{
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            .mrp{
+                font-size: 1.2rem;
+                font-weight: 500;
+                text-decoration: line-through;
+                margin: 1rem 0;
+            }
+            .product-data-real-price{
+                color: $helper;
+                margin: 1rem 0;
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+            .description{
+                font-size: 1.2rem;
+                line-height: 20px;
+                word-spacing: normal;
+                color: $text;
+            }
+            .product-warranty{
+                border-bottom: 1px solid $text;
+                margin: 1.5rem 0;
+                .product-warranty-data{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 500;
+                    .warranty-icon{
+                        width: 4rem;
+                        height: 4rem;
+                        padding: 1rem;
+                        border-radius: 50%;
+                        background-color: $bg;
+                        
+                    }
+                    p{
+                        font-size: 1rem;
+                        margin-top: .5rem;
+                    }
+                }
+            }
+            .product-data-info{
+                color: $text;
+                font-size: 1.1rem;
+                span{
+                    display: inline-block;
+                    font-weight: 600;
+                    color: $black;
+                }
+            }
+            .brand-id{
+                margin: .5rem 0;
+            }
+            .brand-name{
+                @extend .product-data-info
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width:47em){
+    .singleProduct{
+        .wrapper{
+            .left-box{
+                figure{
+                    height: auto;
+                    margin-bottom: 1rem;
+                    img{
+                        height: auto;
+                    }
+                }
+            }
+            .right-box{
+                .product-warranty{
+                    .product-warranty-data{
+                        .warranty-icon{
+                            width: 3rem;
+                            height: 3rem;
+                        }
+                        p{
+                            font-size: .8rem;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:65em){
+        .singleProduct{
+            .wrapper{
+                .right-box{
+                    .product-warranty{
+                        .product-warranty-data{
+                            .warranty-icon{
+                                width: 4rem;
+                                height: 4rem;
+                            }
+                            p{
+                                font-size: 1rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+
+
+

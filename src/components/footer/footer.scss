@@ -1,0 +1,60 @@
+@import '../../scss/variable.scss';
+
+h6{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+footer{
+    margin-top: auto;   
+    width: 100%;
+    color: $white;
+    background-color: $footer_bg;
+    .mid-footer{
+        .mid{
+            p{
+                font-size: 1.1rem;
+                
+            }
+        }
+        .mid-col-2{
+            form{
+                input{
+                    width: 100%;
+                    padding: 1rem;
+                    margin-bottom: .5rem;
+                    outline: none;
+                    color: $black;
+                }
+            }
+        }
+        .mid-col-3{
+            .social-icon{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                .icon{
+                    cursor: pointer;
+                    width: 3rem;
+                    height: 3rem;
+                    border: 1px solid $white;
+                    border-radius: 50%;
+                    font-size: 1.3rem;
+                    display: grid;
+                    place-items: center;
+                    grid-template-columns: repeat(1fr);
+                    transition: all .3s linear;
+                    &:hover{
+                        background-color: white;
+                        color: $footer_bg;
+                    }
+                }
+            }
+        }
+        .mid-col-4{
+            P:last-child{
+                font-size: .9rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@import '../../scss//variable.scss';
+
+.contactSection{
+    // text-align: center;
+    padding: 2rem 0 8rem 0;
+    h3{
+        font-weight: 600;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .map{
+        margin: 5rem 0;
+    }
+    .form-wrapper{
+        width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        margin: 0 auto ;
+        form{
+            width: 50rem;
+            display: grid;
+            grid-column: 40rem;
+            gap: 2rem;
+            .inp{
+                input{
+                    width:100%;
+                    border: 1px solid $border;
+                    padding: 1rem;
+                }
+                textarea{
+                    width: 100%;
+                    resize: none;
+                    border: 1px solid $border;
+                    padding: 1rem;
+                }
+
+                .error-msg{
+                    color: red;
+                    margin-top: .6rem;
+                    font-weight: 600;
+                }
+            }
+            .btn{
+            Button{
+                padding: 1rem 3rem;
+            }
+            }
+        }
+    }
+}

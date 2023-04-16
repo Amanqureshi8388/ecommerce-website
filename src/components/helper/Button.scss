@@ -1,0 +1,28 @@
+.MainBtn{
+    font-size: 1rem;
+    text-decoration: none;
+    max-width: auto;
+    background-color: rgb(98 84 243);
+    color: rgb(255 255 255);
+    padding: .6rem 1.8rem;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    letter-spacing: 1.2px;
+
+    &:hover,
+    &:active {
+    box-shadow: 0 2rem 2rem 0 rgb(132 144 255 / 30%);
+    transform: scale(0.96);
+    box-shadow: rgba(0,0,0,0.16) 0 1px 4px ;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(255 255 255);
+    font-size: 1.8rem;
+  }
+}

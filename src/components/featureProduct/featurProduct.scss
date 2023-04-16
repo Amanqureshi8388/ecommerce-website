@@ -1,0 +1,93 @@
+@import "../../scss//variable.scss";
+
+.features {
+  background-color: $bg;
+  .wrapper {
+    P{
+      color: $helper;
+      font-weight: 500;
+    }
+    h1 {
+      font-size: 2rem;
+      font-size: 900;
+      margin-bottom: 3rem;
+    }
+    .productItem {
+      .card {
+        padding: 1rem 1rem 0.5rem 1rem;
+        background-color: $white;
+        figure {
+          position: relative;
+          width: 100%;
+          img{
+            width: 100%;
+          }
+          figcaption {
+            position: absolute;
+            top: 5%;
+            right: 10%;
+            padding: 0.5rem 0.8rem;
+            background-color: $white;
+            border-radius: 10px;
+            font-size: 0.8rem;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.304);
+            transition: all 0.3s ease-in-out;
+            border-radius: 5px;
+          }
+          &:hover::before {
+            width: 100%;
+          }
+        }
+        .card-data {
+          margin-top: 0.5rem;
+          font-weight: 600;
+          font-size: 1.3rem;
+          padding: 0.4rem 0rem;
+          p {
+            color: $helper;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+////////////  ?   screen size  750px  /////////////////
+@media (min-width: 47em) {
+  .features {
+    .wrapper {
+      .productItem {
+        .card {
+          figure {
+            figcaption {
+              font-size: 1rem;
+            }
+          }
+          .card-data {
+          }
+        }
+      }
+    }
+  }
+}
+
+//////////// ?    screen size  1025px     ////////////////
+@media (min-width: 65em) {
+}
+
+////////////  ?     screen size  1200px
+@media (min-width: 75em) {
+}
+
+////////////  ?     screen size  1440px
+@media (min-width: 90em) {
+}

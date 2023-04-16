@@ -1,0 +1,20 @@
+@import '../../scss/variable.scss';
+
+.cart{
+    .cart_heading{
+        p{
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+}
+
+@media (min-width: 400px){
+    .cart{
+        .cart_heading{
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

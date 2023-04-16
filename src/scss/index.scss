@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+$h1_heading: 3rem;
+$MainFontSize: 1.3rem;
+$h3_FontSize: 1.2rem;
+$h6_FontSize: 1.2rem;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  scrollbar-color: rgb(98 84 243);
+  scrollbar-width: thin;
+  
+}
+
+body::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgb(24 24 29);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #fff;
+  border: 5px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+}
+
+.container {
+  width: 90%;
+  padding: 2rem 0;
+  margin: 0 auto;
+}
+.MainBtn{
+  font-size: 1rem;
+  text-decoration: none;
+  max-width: auto;
+  background-color: rgb(98 84 243);
+  color: rgb(255 255 255);
+  padding: .6rem 1.8rem;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  letter-spacing: 1.2px;
+
+  &:hover,
+  &:active {
+  box-shadow: 0 2rem 2rem 0 rgb(132 144 255 / 30%);
+  transform: scale(0.96);
+  box-shadow: rgba(0,0,0,0.16) 0 1px 4px ;
+    
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255 255 255);
+  font-size: 1.8rem;
+}
+}
+
+////////////  ?   screen size  550px  /////////////////
+@media screen and (min-width: 34em) {
+  html {
+    font-size: 67%;
+  }
+}
+
+////////////  ?   screen size  768px  /////////////////
+@media screen and (min-width: 47em) {
+  html {
+    font-size: 67%;
+  }
+  .container {
+    width: 90%;
+    padding: 2rem 0;
+  }
+}
+
+//////////// ?    screen size  1025px     ////////////////
+@media screen and (min-width: 65em) {
+  html {
+    font-size: 70%;
+  }
+}
+
+////////////  ?     screen size  1200px  ////////////////
+@media screen and (min-width: 73em) {
+  html {
+    font-size: 72%;
+  }
+}
+
+////////////  ?     screen size  1400px  ////////////////
+@media screen and (min-width: 90em) {
+  html {
+    font-size: 100%;
+  }
+}
